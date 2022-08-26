@@ -1,0 +1,198 @@
+/*Credits to: https://www.youtube.com/watch?v=u3GX39CFUEY&list=PL7NAk9A3ueyXGX00zl7FzuaCAQhQTFPxJ&index=2
+* This tutorial taught me how to create the sliding
+* navigation with React and I used the concept to create this 
+* 
+* Copyright (c) 2020 Lily Yang
+* Licensed under the MIT license
+*/
+
+/* :root {
+  
+    --bg: #242526;
+    --border: 1px solid #474a4d;
+    --bg-accent: #484a4d;
+    --nav-size: 60px;
+    --speed: 500ms;
+    --text-color: #dadce1;
+    --red: #FF385F;
+    --light-red: #FFEAEF;
+    --green: #48C773;
+    --light-green: #BFE5CB;
+    --purple: #B86AFE;
+    --light-purple: #F8F0FF;
+    --turquoise: #00D1B2;
+    --light-turquoise: #E5FBF7;
+    --blue: #3273DC;
+    --light-blue: #EAF1FC;
+    --yellow: #F5C401;
+  } */
+  
+  /* body, html{
+     font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  } */
+  
+  .navbar {
+    color: #f5fffa;
+    // font-size: 18px;
+    padding: 0 2rem;
+    background-color: #354ea3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    box-shadow: 0 10px 6px -10px #777;
+  }
+  
+  .navbarNav {
+    padding-top: 2em;
+    list-style: none;
+    text-align: center;
+    background-color: #7d99e9;
+    position: absolute;
+    top: 50px;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    transform: translateX(-10000px);
+    /* left: calc(100% - 10000px); */
+    z-index: 5;
+    transition: all 0.3s ease;
+  }
+  
+  .navbarNav.active {
+    /* left: 0; */
+    transform: translateX(-1rem);
+  }
+  
+  .navItem {
+    position: relative;
+    margin: 10px;
+    font-size: 1em;
+  }
+  
+  .navItem a {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    color: #f5fffa;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .Short a, .Medium a, .Long a, .Home a {
+    border-radius: 50px;
+  }
+  
+  .Short a {
+    border: 1px solid #F5C401;
+    color: #F5C401;
+  }
+  
+  .Medium a {
+    border: 1px solid #BFE5CB;
+    color: #BFE5CB;
+  }
+  
+  .Long a {
+    border: 1px solid var(--turquoise);
+    color: var(--turquoise);
+  }
+  
+  .Home a {
+    border: 1px solid var(--blue);
+    color: var(--blue);
+  }
+  
+  .hamburgerIcon {
+    width: 30px;
+    display: block;
+    background-color: var(--green);
+    height: 3px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .hamburgerIcon:after, .hamburgerIcon:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: var(--green);
+    position: absolute;
+    left: 5px;
+    border-radius: 50px;
+  }
+  
+  .hamburgerIcon:after {
+    bottom: -10px;
+    left: 10px;
+  }
+  
+  .hamburgerIcon:before {
+    bottom: 10px;
+    left: -5px;
+    width: 35px;
+  }
+  
+  .logo {
+    width: 40px;
+  }
+  
+  /************* DESKTOP STYLE **************************/
+  @media screen and (min-width: 1025px) {
+  
+    .navbarNav {
+      display: flex;
+      position: initial;
+      width: initial;
+      height: initial;
+      padding-top: 0;
+      transform: none;
+    }
+    /* underline animation is inspired by: https://codepen.io/jstn/pen/zuDst*/
+  
+    .navItem a {
+      border: none;
+      display: inline-block;
+      width: 200px;
+    }
+    .navItem a:hover {
+      color: #354ea3;
+    }
+    .navItem:after {
+      content: '';
+      color: #354ea3;
+      width: 0;
+      height: 2px;
+      border-radius: 25px;
+      position: absolute;
+      transition: all 0.3s linear;
+      bottom: -2px;
+      left: 0;
+      
+    }
+  
+      .Short:after {
+        background-color: var(--red);
+      }
+  
+      .Medium:after {
+        background-color: #BFE5CB;
+      }
+  
+      .Long:after {
+        background-color: var(--turquoise);
+      }
+  
+      .Home:after {
+        background-color: var(--blue);
+      }
+
+      .navItem:hover:after {
+        width: 100%;
+      }
+  
+      .hamburgerIcon {
+        display: none;
+      }
+  }

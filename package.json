@@ -1,0 +1,19 @@
+{
+  "name": "solidity-todolist-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^5.7.0",
+    "next": "^12.2.5",
+    "react-router-dom": "^6.3.0",
+    "sass": "^1.54.5",
+    "truffle": "^5.5.21"
+  }
+}
