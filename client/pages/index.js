@@ -6,6 +6,7 @@ import TaskAbi from '../../backend/build/contracts/TaskContract.json'
 import { ethers } from 'ethers'
 import React,{ useState, useEffect } from 'react'
 
+
 /* 
 const tasks = [
   { id: 0, taskText: 'clean', isDeleted: false }, 
@@ -61,7 +62,7 @@ export default function Home() {
 
   }
 
-  // Just gets all the tasks from the contract
+  // Gets all the tasks from the contract
   const getAllTasks = async () => {
     try {
       const { ethereum } = window
@@ -159,10 +160,11 @@ export default function Home() {
   }
 
   return (
-    <div className='bg-[#97b5fe] h-screen w-screen flex justify-center py-6'>
+    <div className='bg-[#eaeaea] h-screen w-screen flex justify-center py-6'>
       {!isUserLoggedIn ? <ConnectWalletButton connectWallet={connectWallet} /> :
-        correctNetwork ? <TodoList tasks={tasks} input={input} setInput={setInput} addTask={addTask} deleteTask={deleteTask}/> : <WrongNetworkMessage />}
+        correctNetwork ? <TodoList tasks={tasks} input={input} setInput={setInput} addTask={addTask} deleteTask={deleteTask}/> : <WrongNetworkMessage />}  
     </div>
+   
   )
 }
 

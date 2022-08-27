@@ -16,7 +16,7 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #e61f1f;
   justify-content: center;
   align-items: center;
 }
@@ -29,7 +29,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #ffbbbb;
   text-decoration: none;
 }
 
@@ -88,8 +88,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #ffadad;
+  border-color: #cd1e1e;
 }
 
 .card h2 {
@@ -101,6 +101,13 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
+}
+
+.thunder {
+  height: '200px';
+   width: '200px';
+   color: #fafafa;
+
 }
 
 .logo {

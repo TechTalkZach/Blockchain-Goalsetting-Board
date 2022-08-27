@@ -1,6 +1,8 @@
+
 const ConnectWalletButton = ({ connectWallet }) =>
-  <button
-    className='h-[5rem] text-2xl font-bold py-3 px-12 bg-[#f1c232] rounded-lg mb-10 hover:scale-105 transition duration-500 ease-in-out'
+  
+ <button
+    className='h-[5rem] text-2xl text-white font-bold py-4 px-10 bg-[#e61f1f] rounded-lg mb-10 hover:scale-125 transition duration-600 ease-in-out'
     // Add an onClick functionality
     onClick={connectWallet}
   >
