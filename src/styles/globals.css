@@ -34,6 +34,21 @@ a {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.bg-\[\#ff0000\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
+.rounded-\[30px\] {
+    border-radius: 30px;
+}
+.overflow-y-scroll {
+    overflow-y: scroll;
+}
+.w-\[70\%\] {
+    width: 70%;
+}
+
 .text-8xl {
   font-size: 6rem;
   line-height: 1;
