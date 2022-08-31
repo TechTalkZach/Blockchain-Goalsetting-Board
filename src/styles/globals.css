@@ -153,6 +153,9 @@ img, svg, video, canvas, audio, iframe, embed, object {
 
 /* BUTTON */
 
+.h-screen {
+    height: 100vh;
+}
 .bg-\[\#e61f1f\] {
     --tw-bg-opacity: 1;
     background-color: rgb(230 31 31 / var(--tw-bg-opacity));
@@ -214,5 +217,20 @@ img, svg, video, canvas, audio, iframe, embed, object {
 }
 .flex {
   display: flex;
+}
+
+button, [role="button"] {
+    cursor: pointer;
+}
+
+button, [type='button'], [type='reset'], [type='submit'] {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none;
+}
+
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
 }
 
