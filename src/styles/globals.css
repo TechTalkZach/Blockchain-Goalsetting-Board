@@ -49,6 +49,14 @@ a {
     width: 70%;
 }
 
+.pb-8 {
+    padding-bottom: 2rem;
+}
+
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+    margin: 0;
+}
+
 .text-8xl {
   font-size: 6rem;
   line-height: 1;
@@ -60,6 +68,72 @@ a {
 
 .justify-center {
   justify-content: center;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.outline-none {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+.text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+.p-\[10px\] {
+    padding: 10px;
+}
+.bg-\[\#031956\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(3 25 86 / var(--tw-bg-opacity));
+}
+.border-none {
+    border-style: none;
+}
+.rounded-\[10px\] {
+    border-radius: 10px;
+}
+.w-full {
+    width: 100%;
+}
+.mb-\[10px\] {
+    margin-bottom: 10px;
+}
+
+.text-\[50px\] {
+    font-size: 50px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+.ml-\[20px\] {
+    margin-left: 20px;
+}
+.mb-\[10px\] {
+    margin-bottom: 10px;
+}
+img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
 }
 
 .text-xl {
